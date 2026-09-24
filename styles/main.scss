@@ -364,19 +364,6 @@ h3 {
   font-size: 0.8rem;
   font-weight: 700;
 }
-.product-feature {
-  display: grid;
-  margin-top: 90px;
-  grid-template-columns: 0.75fr 1.25fr;
-  align-items: center;
-  gap: 65px;
-}
-.product-copy h2 {
-  font-size: clamp(2rem, 3.5vw, 3.7rem);
-}
-.product-copy > p:not(.eyebrow) {
-  color: v.$slate;
-}
 .check-list {
   margin: 1.5rem 0 0;
   padding: 0;
@@ -394,18 +381,6 @@ h3 {
     }
   }
 }
-.excel-preview {
-  min-width: 0;
-  padding: 24px;
-  overflow: hidden;
-  border: 1px solid v.$line-light;
-  background: v.$white;
-  box-shadow: 18px 18px 0 v.$secondary;
-  img {
-    width: 100%;
-    min-width: 720px;
-  }
-}
 .modules {
   background: v.$primary;
 }
@@ -416,20 +391,17 @@ h3 {
   border-left: 1px solid v.$line-dark;
 }
 .module {
+  display: flex;
   min-height: 250px;
   padding: 28px;
   border-right: 1px solid v.$line-dark;
   border-bottom: 1px solid v.$line-dark;
+  flex-direction: column;
+  justify-content: space-between;
   p {
     margin-bottom: 0;
     color: rgba(v.$white, 0.7);
   }
-}
-.module--wide {
-  display: grid;
-  grid-column: span 2;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 40px;
 }
 .module-tag {
   display: block;
@@ -454,13 +426,15 @@ h3 {
 .logo-slot {
   display: grid;
   min-height: 150px;
+  padding: 18px;
   place-items: center;
   border-right: 1px solid v.$line-dark;
   border-bottom: 1px solid v.$line-dark;
-  color: rgba(v.$white, 0.35);
-  span {
-    font-size: 0.7rem;
-    text-transform: uppercase;
+  background: rgba(v.$white, 0.025);
+  img {
+    width: min(100%, 118px);
+    height: auto;
+    object-fit: contain;
   }
 }
 .pricing-layout {
@@ -636,7 +610,6 @@ h3 {
       max-width: 620px;
     }
   }
-  .product-feature,
   .pricing-layout {
     grid-template-columns: 1fr;
   }
@@ -696,21 +669,9 @@ h3 {
   .workflow-number {
     margin-bottom: 28px;
   }
-  .product-feature {
-    margin-top: 64px;
-    gap: 40px;
-  }
-  .excel-preview {
-    padding: 16px;
-    box-shadow: 10px 10px 0 v.$secondary;
-  }
   .module-grid,
   .logo-rail {
     grid-template-columns: 1fr;
-  }
-  .module--wide {
-    display: block;
-    grid-column: span 1;
   }
   .module {
     min-height: 220px;
