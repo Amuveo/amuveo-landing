@@ -236,7 +236,76 @@ h3 {
 }
 .hero-visual {
   position: relative;
+  display: grid;
   min-height: 560px;
+  place-items: center;
+}
+.hero-visual::before {
+  position: absolute;
+  inset: 7% 4%;
+  border: 1px solid rgba(v.$mint, 0.2);
+  background: repeating-linear-gradient(135deg, rgba(v.$mint, 0.035) 0 1px, transparent 1px 14px);
+  content: "";
+  transform: rotate(3deg);
+}
+.hero-logo-frame {
+  position: relative;
+  display: grid;
+  width: min(100%, 560px);
+  min-height: 320px;
+  padding: 42px;
+  place-items: center;
+  border: 1px solid rgba(v.$white, 0.24);
+  background: linear-gradient(145deg, rgba(v.$white, 0.1), rgba(v.$white, 0.025));
+  box-shadow:
+    24px 24px 0 rgba(v.$mint, 0.9),
+    0 30px 80px rgba(0, 0, 0, 0.28);
+  transform: rotate(-2deg);
+  &::before,
+  &::after {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: v.$mint;
+    content: "";
+  }
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid;
+    border-left: 3px solid;
+  }
+  &::after {
+    right: -1px;
+    bottom: -1px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+  }
+}
+.hero-image {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 500px);
+  height: auto;
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.2));
+}
+.hero-logo-index,
+.hero-logo-caption {
+  position: absolute;
+  z-index: 1;
+  color: rgba(v.$white, 0.58);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.hero-logo-index {
+  top: 18px;
+  left: 22px;
+}
+.hero-logo-caption {
+  right: 22px;
+  bottom: 18px;
 }
 .hero-grid-lines {
   position: absolute;
@@ -715,7 +784,14 @@ h3 {
     width: 100%;
   }
   .hero-visual {
-    min-height: 440px;
+    min-height: 360px;
+  }
+  .hero-logo-frame {
+    min-height: 250px;
+    padding: 28px;
+    box-shadow:
+      14px 14px 0 rgba(v.$mint, 0.9),
+      0 24px 60px rgba(0, 0, 0, 0.26);
   }
   .event-pass {
     width: 56%;
