@@ -10,6 +10,8 @@ const port = 4001;
 
 const watchedPaths = [
   'index.html',
+  'terms.html',
+  'privacy-policy.html',
   '404.html',
   'robots.txt',
   'sitemap.xml',
