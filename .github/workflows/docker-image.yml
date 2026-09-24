@@ -50,8 +50,8 @@ jobs:
 
       - name: Build Docker image with version tag
         if: steps.compare.outputs.build == 'true'
-        run: docker build -f ./Dockerfile . -t ghcr.io/timeens/amuveo-landing:${{ steps.current_version.outputs.version }}
+        run: docker build -f ./Dockerfile . -t ghcr.io/amuveo/amuveo-landing:${{ steps.current_version.outputs.version }}
 
       - name: Push to GitHub Container Registry
         if: steps.compare.outputs.build == 'true'
-        run: docker push ghcr.io/timeens/amuveo-landing:${{ steps.current_version.outputs.version }}
+        run: docker push ghcr.io/amuveo/amuveo-landing:${{ steps.current_version.outputs.version }}
