@@ -3,20 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Guestlst | Made for hosts who move fast</title>
-    <meta name="description" content="Manage guest lists, ticketing, reservations, newsletters and SMS campaigns from one fast, flexible event platform." />
-    <meta name="robots" content="index, follow" />
+    <title>Guestlst | Event Management Software for Modern Events</title>
+    <meta name="description" content="Manage event guest lists, ticket sales, table reservations, check-in, newsletters and SMS in one platform. Start with Basic for CHF 19.90/month." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#1a1d1f" />
     <link rel="canonical" href="https://guestlst.com/" />
     <link rel="icon" href="/assets/icons/icon-96x96.png" type="image/png" />
     <link rel="apple-touch-icon" href="/assets/icons/icon-180x180.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Guestlst" />
-    <meta property="og:title" content="Guestlst | Made for hosts who move fast" />
-    <meta property="og:description" content="One fast, flexible platform for guest lists, tickets, reservations and audience communication." />
+    <meta property="og:title" content="Guestlst | Event Management Software for Modern Events" />
+    <meta property="og:description" content="Manage event guest lists, ticket sales, table reservations, check-in, newsletters and SMS in one platform. Start with Basic for CHF 19.90/month." />
     <meta property="og:url" content="https://guestlst.com/" />
     <meta property="og:image" content="https://guestlst.com/assets/images/logo.png" />
+    <meta property="og:image:alt" content="Guestlst event management platform" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Guestlst | Event Management Software for Modern Events" />
+    <meta name="twitter:description" content="Manage event guest lists, ticket sales, table reservations, check-in, newsletters and SMS in one platform." />
+    <meta name="twitter:image" content="https://guestlst.com/assets/images/logo.png" />
+    <meta name="twitter:image:alt" content="Guestlst event management platform" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://guestlst.com/#organization",
+            "name": "Guestlst",
+            "legalName": "Amuveo GmbH",
+            "url": "https://guestlst.com/",
+            "logo": "https://guestlst.com/assets/images/logo.png"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://guestlst.com/#website",
+            "url": "https://guestlst.com/",
+            "name": "Guestlst",
+            "publisher": {
+              "@id": "https://guestlst.com/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://guestlst.com/#software",
+            "name": "Guestlst",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://guestlst.com/",
+            "description": "Event management software for guest lists, ticket sales, table reservations, check-in, newsletters and SMS.",
+            "publisher": {
+              "@id": "https://guestlst.com/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://guestlst.com/#pricing",
+              "price": "19.90",
+              "priceCurrency": "CHF",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "19.90",
+                "priceCurrency": "CHF",
+                "unitText": "MONTH"
+              }
+            }
+          }
+        ]
+      }
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-23EJ91S22G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -35,8 +89,8 @@
         <a class="brand" href="/" aria-label="Guestlst home"><img src="/assets/images/hero.png" width="500" height="86" alt="Guestlst" /></a>
         <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="main-menu" aria-label="Open navigation"><span></span><span></span><span></span></button>
         <div class="nav-links" id="main-menu" data-menu>
-          <a href="#platform">Platform</a><a href="#modules">Modules</a><a href="#customers">Customers</a><a href="#pricing">Pricing</a> <a href="https://pwa.guestlst.com/">Log in</a
-          ><a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Start now</a>
+          <a href="#platform">Platform</a><a href="#modules">Solutions</a><a href="#customers">Customers</a><a href="#pricing">Pricing</a><a href="https://pwa.guestlst.com/">Log in</a>
+          <a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Start now</a>
         </div>
       </nav>
     </header>
@@ -45,54 +99,103 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-grid shell">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Event operations, without the drag</p>
-            <h1 id="hero-title">Made for hosts who <span>move fast.</span></h1>
-            <p class="lead">Guestlst brings guest lists, tickets, table bookings, newsletters and SMS into one place, so your team can move from invite to check-in without losing momentum.</p>
+            <p class="eyebrow">Your event. One platform.</p>
+            <h1 id="hero-title">Run your entire event <span>from one place.</span></h1>
+            <p class="hero-summary">Guest lists. Tickets. Tables. Check-in. CRM.</p>
+            <p class="lead">Manage event guest lists, ticket sales, table reservations, check-in, newsletters and SMS in one platform — before, during and after the night.</p>
             <div class="actions">
-              <a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Create your account <span aria-hidden="true">↗</span></a>
-              <a class="button button--outline" href="#platform">See how it works</a>
+              <a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Start now <span aria-hidden="true">↗</span></a>
+              <a class="button button--outline" href="#platform"><span aria-hidden="true">›</span> See how it works</a>
             </div>
-            <ul class="hero-points" aria-label="Platform highlights">
-              <li>Live guest data</li>
-              <li>Digital tickets</li>
-              <li>Fast check-in</li>
+            <ul class="hero-points" aria-label="Platform features">
+              <li>Guest management</li>
+              <li>Ticketing</li>
+              <li>Reservations</li>
+              <li>Check-in</li>
+              <li>CRM &amp; marketing</li>
             </ul>
           </div>
-          <div class="hero-visual reveal">
-            <div class="hero-logo-frame">
-              <span class="hero-logo-index">01 / PLATFORM</span>
-              <img class="hero-image" src="/assets/images/hero.png" width="500" height="86" alt="Guestlst" />
-              <span class="hero-logo-caption">Event operations, connected.</span>
-            </div>
+          <div class="hero-visual reveal" aria-label="Sample digital event ticket">
+            <div class="phone phone--back" aria-hidden="true"></div>
+            <article class="phone phone--front">
+              <div class="ticket-brand"><span class="brand-mark">G</span><span>Guestlst</span><span aria-hidden="true">•••</span></div>
+              <p class="ticket-label">Sample ticket</p>
+              <h2>Rooftop Session</h2>
+              <p class="ticket-date">General admission · 21:00</p>
+              <div class="ticket-qr" aria-hidden="true"><span></span></div>
+              <div class="wallet-button">Add to Apple Wallet</div>
+              <p class="ticket-code">Your ticket · 01 of 01</p>
+            </article>
+            <span class="hero-orbit hero-orbit--one" aria-hidden="true"></span>
+            <span class="hero-orbit hero-orbit--two" aria-hidden="true"></span>
           </div>
         </div>
-        <a class="scroll-cue" href="#platform">Explore the platform <span aria-hidden="true">↓</span></a>
+      </section>
+
+      <section class="customers" id="customers" aria-label="Trusted by event teams">
+        <div class="shell customer-strip">
+          <p>Trusted by teams behind events at</p>
+          <div class="customer-logos">
+            <img src="/assets/customer-logos/terrazzza.png" width="250" height="250" loading="lazy" alt="Terrazzza" />
+            <img src="/assets/customer-logos/Seebad-Enge.png" width="250" height="250" loading="lazy" alt="Seebad Enge" />
+            <img src="/assets/customer-logos/ADC.png" width="250" height="250" loading="lazy" alt="ADC" />
+            <img src="/assets/customer-logos/Rundfunk.png" width="250" height="250" loading="lazy" alt="Rundfunk" />
+            <img src="/assets/customer-logos/roland.png" width="250" height="250" loading="lazy" alt="Roland" />
+            <img src="/assets/customer-logos/coda.png" width="250" height="250" loading="lazy" alt="Coda" />
+            <img src="/assets/customer-logos/kottulinsky.png" width="250" height="250" loading="lazy" alt="Kottulinsky" />
+          </div>
+        </div>
       </section>
 
       <section class="platform section" id="platform" aria-labelledby="platform-title">
+        <div class="shell platform-layout">
+          <div class="platform-copy reveal">
+            <p class="eyebrow">The connected platform</p>
+            <h2 id="platform-title">One event.<br />One platform.<br /><span>Everything connected.</span></h2>
+            <p>From the first invite to the last guest, your event tools work together seamlessly.</p>
+            <a class="button button--outline" href="#modules">Explore platform <span aria-hidden="true">›</span></a>
+          </div>
+          <div class="platform-diagram reveal" role="img" aria-label="Guestlst connects guests, tickets, tables, communications, CRM and check-in">
+            <div class="diagram-orbit"></div>
+            <div class="diagram-center"><span class="brand-mark">G</span><strong>Guestlst</strong></div>
+            <div class="diagram-node diagram-node--guests"><span>G</span>Guests</div>
+            <div class="diagram-node diagram-node--tickets"><span>T</span>Tickets</div>
+            <div class="diagram-node diagram-node--tables"><span>T</span>Tables</div>
+            <div class="diagram-node diagram-node--comms"><span>N+S</span>Newsletters &amp; SMS</div>
+            <div class="diagram-node diagram-node--crm"><span>C</span>CRM</div>
+            <div class="diagram-node diagram-node--checkin"><span>OK</span>Check-in</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-section section" aria-labelledby="workflow-title">
         <div class="shell">
           <div class="section-heading reveal">
             <div>
-              <p class="eyebrow">One clear workflow</p>
-              <h2 id="platform-title">Your event, connected from first name to final check-in.</h2>
+              <p class="eyebrow">From invitation to last guest</p>
+              <h2 id="workflow-title">A simple workflow for exceptional events.</h2>
             </div>
-            <p>Keep every list, invitation and update in sync while your team stays focused on the room.</p>
           </div>
           <div class="workflow">
             <article class="workflow-item reveal">
               <span class="workflow-number">01</span>
-              <h3>Build the list</h3>
-              <p>Paste names, import Excel files or let guests register themselves. Sub-lists and partner contingents stay organized.</p>
+              <h3>Build your guest list</h3>
+              <p>Import contacts, create sub-lists and manage partner allocations.</p>
             </article>
             <article class="workflow-item reveal">
               <span class="workflow-number">02</span>
-              <h3>Send the invite</h3>
-              <p>Deliver branded digital tickets straight to Apple or Google Wallet and keep every guest detail attached.</p>
+              <h3>Sell &amp; invite</h3>
+              <p>Send invitations or sell tickets, including Apple and Google Wallet.</p>
             </article>
             <article class="workflow-item reveal">
               <span class="workflow-number">03</span>
-              <h3>Run the door</h3>
-              <p>Give your team a live overview of arrivals, plus-ones, ticket status and every change on the night.</p>
+              <h3>Manage the night</h3>
+              <p>See who is coming and what is changing in real time.</p>
+            </article>
+            <article class="workflow-item reveal">
+              <span class="workflow-number">04</span>
+              <h3>Stay connected</h3>
+              <p>Follow up with guests through email, SMS and your community.</p>
             </article>
           </div>
         </div>
@@ -107,71 +210,57 @@
             </div>
           </div>
           <div class="module-grid">
-            <article class="module reveal">
-              <div>
-                <span class="module-tag">Core</span>
-                <h3>Guest management</h3>
-              </div>
-              <p>Smart lists, self-registration, partner contingents, plus-ones and flexible guest data in one live view.</p>
-            </article>
-            <article class="module reveal">
-              <span class="module-tag">Sell</span>
-              <h3>Ticketshop</h3>
-              <p>Public or invite-only ticket sales, multiple categories and direct Stripe payouts.</p>
-            </article>
-            <article class="module reveal">
-              <span class="module-tag">Seat</span>
-              <h3>Reservations</h3>
-              <p>Visual table layouts and a streamlined way to coordinate bookings and guests.</p>
-            </article>
-            <article class="module reveal">
-              <span class="module-tag">Connect</span>
-              <h3>Community codes</h3>
-              <p>Turn guests into members or VIPs with role-based access across events.</p>
-            </article>
-            <article class="module reveal">
-              <span class="module-tag">Reach</span>
-              <h3>Newsletter</h3>
-              <p>Create campaigns, target the right audience and work with your own templates.</p>
-            </article>
-            <article class="module reveal">
-              <span class="module-tag">Remind</span>
-              <h3>Text messages</h3>
-              <p>Send personalized confirmations, timely updates and reminders directly by SMS.</p>
-            </article>
-            <article class="module reveal">
-              <div>
-                <span class="module-tag">Brand</span>
-                <h3>Whitelabel</h3>
-              </div>
-              <p>Customize all public pages to match your company's corporate design.</p>
-            </article>
+            <article class="module reveal"><span class="module-tag">Core</span><h3>Guest management</h3><p>Smart lists, self-registration, partner contingents, plus-ones and flexible guest data in one live view.</p></article>
+            <article class="module reveal"><span class="module-tag">Sell</span><h3>Ticketshop</h3><p>Public or invite-only ticket sales, multiple categories and direct Stripe payouts.</p></article>
+            <article class="module reveal"><span class="module-tag">Seat</span><h3>Reservations</h3><p>Visual table layouts and a streamlined way to coordinate bookings and guests.</p></article>
+            <article class="module reveal"><span class="module-tag">Connect</span><h3>Community codes</h3><p>Turn guests into members or VIPs with role-based access across events.</p></article>
+            <article class="module reveal"><span class="module-tag">Reach</span><h3>Newsletter</h3><p>Create campaigns, target the right audience and work with your own templates.</p></article>
+            <article class="module reveal"><span class="module-tag">Remind</span><h3>Text messages</h3><p>Send personalized confirmations, timely updates and reminders directly by SMS.</p></article>
+            <article class="module reveal"><span class="module-tag">Brand</span><h3>Whitelabel</h3><p>Customize all public pages to match your company's corporate design.</p></article>
           </div>
         </div>
       </section>
 
-      <section class="customers section" id="customers" aria-labelledby="customers-title">
-        <div class="shell">
-          <div class="customer-heading reveal">
-            <p class="eyebrow">Built for busy rooms</p>
-            <h2 id="customers-title">Trusted by hosts who care about the experience.</h2>
+      <section class="dashboard section" aria-labelledby="dashboard-title">
+        <div class="shell dashboard-layout">
+          <div class="dashboard-copy reveal">
+            <p class="eyebrow">Everything at a glance / Sample dashboard</p>
+            <h2 id="dashboard-title">See your entire event at a glance.</h2>
+            <p>Real-time insights, from guest lists and ticket sales to tables and check-ins — all in one dashboard.</p>
+            <div class="dashboard-stats" aria-label="Sample event statistics">
+              <div><strong>1,248</strong><span>Guests</span></div>
+              <div><strong>847</strong><span>Confirmed</span></div>
+              <div><strong>632</strong><span>Checked in</span></div>
+              <div><strong>94</strong><span>Tables</span></div>
+            </div>
+            <a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Explore platform <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="logo-rail" aria-label="Guestlst customers">
-            <div class="logo-slot"><img src="/assets/customer-logos/terrazzza.png" width="250" height="250" loading="lazy" alt="Terrazzza" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Seebad-Enge.png" width="250" height="250" loading="lazy" alt="Seebad Enge" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/klaus.png" width="250" height="250" loading="lazy" alt="Klaus" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Love-me-two-times.png" width="250" height="250" loading="lazy" alt="Love Me Two Times" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/ADC.png" width="250" height="250" loading="lazy" alt="ADC" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Rundfunk.png" width="250" height="250" loading="lazy" alt="Rundfunk" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/roland.png" width="250" height="250" loading="lazy" alt="Roland" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Jennyfer-was-here.png" width="250" height="250" loading="lazy" alt="Jennyfer Was Here" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/create.png" width="250" height="250" loading="lazy" alt="Create" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/studio.png" width="250" height="250" loading="lazy" alt="Studio" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Gapz.png" width="250" height="250" loading="lazy" alt="Gapz" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/poestli.png" width="250" height="250" loading="lazy" alt="Poestli" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/Culinario.png" width="250" height="250" loading="lazy" alt="Culinario" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/coda.png" width="250" height="250" loading="lazy" alt="Coda" /></div>
-            <div class="logo-slot"><img src="/assets/customer-logos/kottulinsky.png" width="250" height="250" loading="lazy" alt="Kottulinsky" /></div>
+          <div class="dashboard-card reveal" role="img" aria-label="Sample event dashboard showing guest metrics and check-in activity">
+            <div class="dashboard-card-head"><span class="brand-mark">G</span><strong>Guestlst</strong><span>Sample event</span></div>
+            <div class="dashboard-event"><strong>Rooftop Session</strong><span>Sample event / Sample data</span></div>
+            <div class="dashboard-metrics"><span><strong>1,248</strong>Guests</span><span><strong>847</strong>Confirmed</span><span><strong>632</strong>Checked in</span><span><strong>94</strong>Tables</span></div>
+            <div class="dashboard-charts">
+              <div class="chart-panel"><span>Check-ins through the night</span><div class="bar-chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+              <div class="chart-panel chart-panel--ring"><span>Guest types</span><div aria-hidden="true"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="host-types section" aria-labelledby="host-types-title">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Built for the people who create great events</p>
+              <h2 id="host-types-title">One platform. Every kind of host.</h2>
+            </div>
+          </div>
+          <div class="host-grid">
+            <article><span class="host-icon" aria-hidden="true">▮▮</span><h3>Clubs &amp; bars</h3><p>Guest lists, tickets &amp; check-in</p></article>
+            <article><span class="host-icon" aria-hidden="true">▮▮</span><h3>Event agencies</h3><p>Multiple events &amp; guests</p></article>
+            <article><span class="host-icon" aria-hidden="true">▮▮</span><h3>Restaurants &amp; venues</h3><p>Reservations and guest lists</p></article>
+            <article><span class="host-icon" aria-hidden="true">▮▮</span><h3>Brands &amp; corporates</h3><p>Invitations, registration</p></article>
+            <article><span class="host-icon" aria-hidden="true">▮▮</span><h3>Promoters</h3><p>Ticketing, tables and guests</p></article>
           </div>
         </div>
       </section>
@@ -181,79 +270,31 @@
           <div class="section-heading reveal">
             <div>
               <p class="eyebrow">Simple, modular pricing</p>
-              <h2 id="pricing-title">Start with the essentials. Add more when you need it.</h2>
+              <h2 id="pricing-title">Start with the essentials.<br />Add more when you need it.</h2>
+              <p>Monthly plans in CHF. Start with Basic, then add optional modules and packs.</p>
             </div>
           </div>
           <div class="pricing-layout">
             <article class="price-main reveal">
               <div class="price-top">
-                <div>
-                  <span class="module-tag">Foundation</span>
-                  <h3>Basic</h3>
-                </div>
+                <div><span class="module-tag">Foundation</span><h3>Basic</h3></div>
                 <p class="price"><strong>19.90</strong><span>CHF / month</span></p>
               </div>
               <p>A monthly membership for powerful event management.</p>
               <ul class="check-list">
-                <li>Smart guest lists and sub-lists</li>
-                <li>Apple and Google Wallet tickets</li>
-                <li>Quick add and Excel support</li>
-                <li>Partner contingents and self-registration</li>
-                <li>Ticketshop included</li>
+                <li>Smart guest lists and sub-lists</li><li>Apple and Google Wallet tickets</li><li>Quick add and Excel support</li><li>Partner contingents and self-registration</li><li>Ticketshop included</li>
               </ul>
               <a class="button button--dark" href="https://pwa.guestlst.com/auth/register">Start with Basic <span aria-hidden="true">↗</span></a>
             </article>
             <div class="addon-list reveal">
-              <p class="pricing-group">Modules</p>
-              <article>
-                <div><span>Ticketshop</span><small>Enables the ticket shop</small></div>
-                <strong>Free</strong>
-              </article>
-              <article>
-                <div><span>Reservations</span><small>Reservations, tables and floor plans</small></div>
-                <strong>CHF 9.90</strong>
-              </article>
-              <article>
-                <div><span>Community codes</span><small>Member and VIP community codes</small></div>
-                <strong>CHF 9.90</strong>
-              </article>
-              <article>
-                <div><span>Newsletter</span><small>Newsletter module with 5,000 emails per month</small></div>
-                <strong>CHF 19.90</strong>
-              </article>
-              <article>
-                <div><span>Text messages</span><small>SMS module with 20 messages per month</small></div>
-                <strong>CHF 9.90</strong>
-              </article>
-              <article>
-                <div><span>Whitelabel</span><small>Public pages in your corporate design</small></div>
-                <strong>CHF 29.90</strong>
-              </article>
-
-              <p class="pricing-group">Email packs</p>
-              <article>
-                <div><span>Email Starter</span><small>Increase the monthly quota to 25,000 emails</small></div>
-                <strong>CHF 9.90</strong>
-              </article>
-              <article>
-                <div><span>Email Growth</span><small>Increase the monthly quota to 50,000 emails</small></div>
-                <strong>CHF 19.90</strong>
-              </article>
-              <article>
-                <div><span>Email Scale</span><small>Increase the monthly quota to 100,000 emails</small></div>
-                <strong>CHF 29.90</strong>
-              </article>
-
-              <p class="pricing-group">Text message packs</p>
-              <article>
-                <div><span>Text Message Starter</span><small>Increase the monthly quota to 500 messages</small></div>
-                <strong>CHF 49.90</strong>
-              </article>
-              <article>
-                <div><span>Text Message Growth</span><small>Increase the monthly quota to 1,000 messages</small></div>
-                <strong>CHF 89.90</strong>
-              </article>
-              <p class="pricing-note">Module and pack prices are monthly. All prices shown in CHF.</p>
+              <p class="addon-title">Optional modules <span>Per month</span></p>
+              <article><div><span>Ticketshop</span><small>Enables the ticket shop</small></div><strong>Included</strong></article>
+              <article><div><span>Reservations</span><small>Reservations, tables and floor plans</small></div><strong>CHF 9.90</strong></article>
+              <article><div><span>Community codes</span><small>Member and VIP community codes</small></div><strong>CHF 9.90</strong></article>
+              <article><div><span>Newsletter / 5k emails</span><small>Newsletter module with 5,000 emails per month</small></div><strong>CHF 19.90</strong></article>
+              <article><div><span>Text messages / 20</span><small>SMS module with 20 messages per month</small></div><strong>CHF 9.90</strong></article>
+              <article><div><span>Whitelabel</span><small>Public pages in your corporate design</small></div><strong>CHF 29.90</strong></article>
+              <p class="pricing-note">All prices shown in CHF. Optional modules are billed monthly.</p>
             </div>
           </div>
         </div>
@@ -261,10 +302,7 @@
 
       <section class="final-cta" aria-labelledby="cta-title">
         <div class="shell final-cta-inner reveal">
-          <div>
-            <p class="eyebrow">Your next event starts here</p>
-            <h2 id="cta-title">Move faster. Host better.</h2>
-          </div>
+          <div><p class="eyebrow">Your next event starts here</p><h2 id="cta-title">Move faster. Host better.</h2></div>
           <a class="button button--mint" href="https://pwa.guestlst.com/auth/register">Create your account <span aria-hidden="true">↗</span></a>
         </div>
       </section>
