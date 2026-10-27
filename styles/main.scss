@@ -270,6 +270,12 @@ h3 {
   gap: 12px;
 }
 
+.trial-note {
+  margin: 10px 0 0;
+  color: rgba(v.$white, 0.65);
+  font-size: 0.72rem;
+}
+
 .hero-points {
   display: grid;
   max-width: 520px;
