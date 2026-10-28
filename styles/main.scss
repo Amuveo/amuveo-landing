@@ -302,150 +302,13 @@ h3 {
   place-items: center;
 }
 
-.phone {
-  position: absolute;
-  width: 220px;
-  height: 430px;
-  padding: 18px 15px;
-  border: 2px solid rgba(v.$white, 0.26);
-  border-radius: 34px;
-  background: v.$ink;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.48);
-}
-
-.phone--back {
-  top: 59px;
-  left: 21%;
-  opacity: 0.45;
-  transform: rotate(7deg) translate(36px, 16px);
-}
-
-.phone--front {
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 25px 20px 20px;
-  transform: rotate(-3deg);
-}
-
-.ticket-brand,
-.dashboard-card-head {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 0.62rem;
-  font-weight: 700;
-}
-
-.ticket-brand > span:last-child {
-  margin-left: auto;
-  color: rgba(v.$white, 0.5);
-}
-
-.brand-mark {
-  display: inline-grid;
-  width: 21px;
-  aspect-ratio: 1;
-  place-items: center;
-  border-radius: 6px;
-  background: v.$mint;
-  color: v.$ink;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.ticket-label {
-  margin: 34px 0 4px;
-  color: v.$mint;
-  font-size: 0.56rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.phone h2 {
-  margin-bottom: 0.3rem;
-  font-size: 1.08rem;
-  letter-spacing: 0;
-}
-
-.ticket-date {
-  margin-bottom: 16px;
-  color: rgba(v.$white, 0.6);
-  font-size: 0.58rem;
-}
-
-.ticket-qr {
-  position: relative;
-  width: min(100%, 150px);
-  aspect-ratio: 1;
+.app-screenshot {
+  width: min(100%, 590px);
+  height: auto;
   align-self: center;
-  margin-bottom: 15px;
-  background-color: v.$white;
-  background-image: repeating-conic-gradient(v.$ink 0 25%, v.$white 0 50%);
-  background-size: 12px 12px;
-
-  &::before,
-  &::after,
-  span {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    border: 5px solid v.$ink;
-    background: v.$white;
-    box-shadow: inset 0 0 0 5px v.$white, inset 0 0 0 10px v.$ink;
-    content: "";
-  }
-
-  &::before {
-    top: 5px;
-    left: 5px;
-  }
-
-  &::after {
-    top: 5px;
-    right: 5px;
-  }
-
-  span {
-    bottom: 5px;
-    left: 5px;
-  }
-}
-
-.wallet-button {
-  padding: 7px 10px;
-  border: 1px solid rgba(v.$white, 0.25);
-  border-radius: 5px;
-  background: v.$ink-soft;
-  font-size: 0.56rem;
-  text-align: center;
-}
-
-.ticket-code {
-  margin: auto 0 0;
-  padding-top: 14px;
-  color: rgba(v.$white, 0.48);
-  font-size: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.hero-orbit {
-  position: absolute;
-  border: 1px solid rgba(v.$mint, 0.2);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.hero-orbit--one {
-  width: 390px;
-  height: 390px;
-}
-
-.hero-orbit--two {
-  width: 455px;
-  height: 455px;
-  border-color: rgba(v.$white, 0.08);
+  border: 1px solid rgba(v.$white, 0.22);
+  border-radius: 13px;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.42), 0 0 70px rgba(v.$mint, 0.09);
 }
 
 .customers {
@@ -509,83 +372,14 @@ h3 {
   font-size: 0.82rem;
 }
 
-.platform-diagram {
-  position: relative;
-  width: min(100%, 530px);
-  aspect-ratio: 1.55;
-  justify-self: end;
-}
-
-.diagram-orbit {
-  position: absolute;
-  inset: 19% 7%;
-  border: 1px solid rgba(v.$mint, 0.65);
-  border-radius: 50%;
-  box-shadow: 0 0 0 7px rgba(v.$mint, 0.035);
-  transform: rotate(-8deg);
-}
-
-.diagram-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  transform: translate(-50%, -50%);
-}
-
-.diagram-node {
-  position: absolute;
-  display: grid;
-  justify-items: center;
-  gap: 5px;
-  color: rgba(v.$white, 0.72);
-  font-size: 0.58rem;
-
-  span {
-    display: grid;
-    width: 34px;
-    aspect-ratio: 1;
-    place-items: center;
-    border: 1px solid v.$mint;
-    border-radius: 50%;
-    background: v.$ink;
-    color: v.$mint;
-    font-size: 0.7rem;
-    font-weight: 700;
-  }
-}
-
-.diagram-node--guests {
-  top: 26%;
-  left: 15%;
-}
-
-.diagram-node--tickets {
-  top: 9%;
-  left: 48%;
-}
-
-.diagram-node--tables {
-  top: 26%;
-  right: 12%;
-}
-
-.diagram-node--comms {
-  bottom: 7%;
-  left: 15%;
-}
-
-.diagram-node--crm {
-  bottom: 1%;
-  left: 48%;
-}
-
-.diagram-node--checkin {
-  right: 12%;
-  bottom: 7%;
+.platform-screenshot,
+.dashboard-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(v.$white, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
 }
 
 .workflow-section,
@@ -710,133 +504,20 @@ h3 {
   font-size: 0.78rem;
 }
 
-.dashboard-stats {
+.guest-features {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  margin: 30px 0;
-
-  div {
-    display: grid;
-    gap: 2px;
-  }
-
-  strong {
-    font-size: clamp(1.15rem, 2vw, 1.6rem);
-    line-height: 1.2;
-  }
-
-  span {
-    color: rgba(v.$white, 0.52);
-    font-size: 0.54rem;
-    text-transform: uppercase;
-  }
-}
-
-.dashboard-card {
-  padding: 22px;
-  border: 1px solid rgba(v.$white, 0.17);
-  border-radius: 14px;
-  background: v.$ink-soft;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
-}
-
-.dashboard-card-head {
-  padding-bottom: 15px;
-  border-bottom: 1px solid v.$line-dark;
-  font-size: 0.62rem;
-
-  > span:last-child {
-    margin-left: auto;
-    color: v.$mint;
-    font-size: 0.55rem;
-    text-transform: uppercase;
-  }
-}
-
-.dashboard-event {
-  display: grid;
-  gap: 3px;
-  padding: 17px 0 12px;
-  font-size: 0.72rem;
-
-  span {
-    color: rgba(v.$white, 0.48);
-    font-size: 0.55rem;
-    text-transform: uppercase;
-  }
-}
-
-.dashboard-metrics {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-
-  > span {
-    display: grid;
-    gap: 5px;
-    padding: 11px 9px;
-    border-radius: 5px;
-    background: rgba(v.$white, 0.06);
-    color: rgba(v.$white, 0.55);
-    font-size: 0.48rem;
-    text-transform: uppercase;
-  }
-
-  strong {
-    color: v.$white;
-    font-size: 0.9rem;
-  }
-}
-
-.dashboard-charts {
-  display: grid;
-  grid-template-columns: 1.45fr 0.8fr;
   gap: 10px;
-  margin-top: 12px;
-}
+  margin: 24px 0 28px;
+  padding: 0;
+  color: rgba(v.$white, 0.75);
+  font-size: 0.68rem;
+  list-style: none;
 
-.chart-panel {
-  min-height: 120px;
-  padding: 12px;
-  border-radius: 5px;
-  background: rgba(v.$white, 0.045);
-  color: rgba(v.$white, 0.56);
-  font-size: 0.51rem;
-  text-transform: uppercase;
-}
-
-.bar-chart {
-  display: flex;
-  height: 72px;
-  align-items: end;
-  justify-content: space-around;
-  gap: 6px;
-  padding: 12px 8px 0;
-
-  i {
-    width: 10%;
-    height: 35%;
-    border-radius: 3px 3px 0 0;
-    background: v.$mint;
-
-    &:nth-child(2) { height: 48%; }
-    &:nth-child(3) { height: 38%; }
-    &:nth-child(4) { height: 66%; }
-    &:nth-child(5) { height: 55%; }
-    &:nth-child(6) { height: 77%; }
-    &:nth-child(7) { height: 69%; }
-    &:nth-child(8) { height: 94%; }
+  li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: v.$mint;
   }
-}
-
-.chart-panel--ring > div {
-  width: 64px;
-  aspect-ratio: 1;
-  margin: 12px auto 0;
-  border: 8px solid v.$mint;
-  border-left-color: v.$primary;
-  border-radius: 50%;
 }
 
 .host-types {
@@ -1257,19 +938,6 @@ h3 {
     min-height: 430px;
   }
 
-  .phone {
-    width: 196px;
-    height: 390px;
-  }
-
-  .phone--front {
-    padding: 21px 17px 16px;
-  }
-
-  .ticket-qr {
-    width: 130px;
-  }
-
   .platform-layout,
   .dashboard-layout {
     gap: 36px;
@@ -1318,21 +986,7 @@ h3 {
   }
 
   .hero-visual {
-    min-height: 430px;
-  }
-
-  .phone--back {
-    left: 16%;
-  }
-
-  .hero-orbit--one {
-    width: 330px;
-    height: 330px;
-  }
-
-  .hero-orbit--two {
-    width: 380px;
-    height: 380px;
+    min-height: 360px;
   }
 
   .customer-strip {
@@ -1355,11 +1009,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .platform-diagram {
-    width: min(100%, 450px);
-    justify-self: center;
-  }
-
   .workflow {
     grid-template-columns: 1fr;
   }
@@ -1371,14 +1020,6 @@ h3 {
   .module {
     min-height: 200px;
     padding: 17px;
-  }
-
-  .dashboard-card {
-    padding: 15px;
-  }
-
-  .dashboard-stats {
-    gap: 8px;
   }
 
   .host-grid {
@@ -1424,14 +1065,6 @@ h3 {
 
   .customer-logos {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .dashboard-metrics {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .dashboard-charts {
-    grid-template-columns: 1fr;
   }
 
   .workflow-item {
